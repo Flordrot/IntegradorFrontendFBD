@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickets</title>
+    <link rel="icon" type="image/x-icon" href="img/codoacodo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand ms-auto" aria-current="page" href="#"></a>
+          <a class="navbar-brand ms-auto" href="home">Conf Bs As</a>
+          <a class="navbar-brand" aria-current="page" href="#">                  </a>
+          <a class="navbar-brand" aria-current="page" href="#">                  </a>        
+          <a class="navbar-brand me-auto text-secondary" aria-current="page" href="conferencia">La conferencia</a>
+          <a class="navbar-brand me-auto text-secondary" aria-current="page" href="oradores">Los oradores</a>
+          <a class="navbar-brand me-auto text-secondary" aria-current="page" href="lugar_fecha">El lugar y la fecha</a>
+          <a class="navbar-brand me-auto text-white" aria-current="page" href="ser_orador">Convertite en orador</a>
+          <a class="navbar-brand me-auto text-success" aria-current="page" href="tickets">Comprar tickets</a>
+        </div>
+  </nav>
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4 ms-6">
+    <div class="col">
+      <div class="card h-100 card border-primary mb-3 card text-center ms-5" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Estudiante</h5>
+          <p class="card-text">Tienen un descuento<br><span>80%</span><br>* presentar documentación</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 card border-success card text-center" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Trainee</h5>
+          <p class="card-text">Tienen un descuento<br><span>50%</span><br>* presentar documentación</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 card border-warning card text-center" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text">Tienen un descuento<br><span>15%</span><br>* presentar documentación</p>
+        </div>
+      </div>
+    </div>
+</div>
+<form action="">
+<div class="container text-center">
+    <p class="small mb-0 mt-2">VENTA</p>
+    <p class="h1">VALOR DE TICKET $200</p>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        </div>
+    </div>
+    <br>
+    <div>
+        <input type="email" class="form-control" placeholder="Correo" aria-label="Correo">
+    </div>
+      <br>
+    <div class="row">  
+      <div class="form-group col col-md-6">
+        <label for="">Cantidad</label>
+        <br>
+          <input id="CantidadEntradas" type="text" class="form-control" placeholder="Cantidad">
+        </div>
+        <div class="form-group col col-md-6">
+            <label for="">Categoría</label> 
+             <select id="selectCategoria" class="form-control" id="categoria">
+        </div>
+    </div>
+        <div class="form-group col 12- col-md-6">
+                <option selected value="Estudiante">Estudiante</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+              </select>
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="form-group col">
+            <div id="TotalAPagar" class="alert alert-primary bg-info text-start" placeholder="Total a Pagar: $" role="alert">
+                Total a pagar: $
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="reset" class="btn btn-block border btn-success" type="button">Borrar</button>
+        </div>
+        <div class="col">
+            <button type="button" id="btnResumen" onclick="resumen()" class="botonEnviar btn btn-block btn-success border">Resumen</button>
+        </div>
+    </div>
+</form>
+    <footer>
+        <nav class="navbar-nav mt-2 footer d-flex align-items-center text-white">
+          <div class="container-fluid m-4">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Preguntas_frecuentes">Preguntas <br>frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Contacto">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Prensa">Prensa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Conferencias">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Términos_y_condiciones">Términos y<br>condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Privacidad">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4 text-white" href="Estudiantes">Estudiantes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="JavaScript/script.js">
+    </script>
+    </body>
+</html>

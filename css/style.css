@@ -31,8 +31,18 @@
 
 .botonEnviar {
     background-color: rgb(77, 185, 31);
+    font-weight:600;
+    font-size:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
 }
 
 .recordatorio {
     font-size: smaller;
+}
+
+.Total {
+    background-color: rgb(142, 206, 245);
 }
